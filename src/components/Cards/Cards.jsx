@@ -1,4 +1,6 @@
 import React from "react";
+import Watch from '/public/eye_watchLater.svg'
+import Fav from '/public/favorite.svg'
 
 function Cards({ film }) {
     return (
@@ -8,6 +10,10 @@ function Cards({ film }) {
             <p>В ролях: {film.actors.join(', ')}</p>
             <p>Жанры: {film.categories.join(', ')}</p>
             <p>Рейтинг: {film.rating} </p>
+            <p>
+                <img src={Watch} className="logo" alt="Watch later" />
+                <img src={Fav} className="logo" alt="Favorite film" />
+            </p>
         </div>
     );
 }
