@@ -1,7 +1,6 @@
 import React from "react";
 import Watch from '/eye_watchLater.svg'
 import Fav from '/favorite.svg'
-import ImageCards from '../Image/ImageCards';
 import { useCard } from "../store/store";
 
 function Cards({ film }) {
@@ -9,6 +8,7 @@ function Cards({ film }) {
     const activeWatch = useCard(state => (state.getWatch));
     const swapWatch = useCard(state => (state.toggleWatch));
     const activeFavorite = useCard(state => (state.getFavorite));
+    const swapFavorite = useCard(state => (state.toggleFavorite));
 
     return (
         <div class="movie-card">
@@ -18,15 +18,18 @@ function Cards({ film }) {
             <p>Жанры: {film.categories.join(', ')}</p>
             <p>Рейтинг: {film.rating} </p>
             <p>
-                <ImageCards
+
+                <img
                     src={Watch}
                     alt="Watch later"
-                    active={activeWatch(film.id)}
+                    className={activeWatch(film.id) ? "logo_active" : "logo"}
+                    onClick={() => swapWatch(film.id)}
                 />
-                <ImageCards
+                <img
                     src={Fav}
                     alt="Favorite film"
-                    active={activeFavorite(film.id)}
+                    className={activeFavorite(film.id) ? "logo_active" : "logo"}
+                    onClick={() => swapFavorite(film.id)}
                 />
             </p>
         </div>

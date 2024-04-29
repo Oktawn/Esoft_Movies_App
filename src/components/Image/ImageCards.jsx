@@ -1,12 +1,11 @@
-
-function ImageCards({ src, alt, active, click }) {
+function ImageCards({ src, alt, active, click, id }) {
 
     return (
         <img
             src={src}
             className={active ? "logo_active" : "logo"}
             alt={alt}
-            onClick={click}
+            onClick={() => click(id)}
         ></img>
     );
 }
