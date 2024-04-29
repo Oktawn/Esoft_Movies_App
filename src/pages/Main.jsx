@@ -1,18 +1,15 @@
-import { useState } from 'react'
 import CardList from '../components/CardList/CardList'
-import { FILM_DATA } from '../mocks/FilmData'
 import Navigate from '../components/Navigate/Navigate';
-
-
+import { useCard } from '../components/store/store';
+import { useState } from 'react';
 
 function Main() {
-    const [films, setFilms] = useState(FILM_DATA);
-
+    const [films, setFilms] = useState(useCard((state) => state.cards));
     return (
-        <>
-            <Navigate param={films} state={setFilms} />
+        <div>
+            <Navigate state={setFilms} />
             <CardList props={films} />
-        </>
+        </div>
     );
 }
 

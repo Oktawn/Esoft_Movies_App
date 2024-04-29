@@ -1,24 +1,24 @@
 import { useState } from "react";
-import { FILM_DATA } from "../../mocks/FilmData";
+import { useCard } from "../store/store";
 
-function Navigate({ param, state }) {
+function Navigate({ state }) {
 
-    const [delay, setDelay] = useState(500)
+    const [delay, setDelay] = useState(0)
+    const sortLow = useCard(state => state.sortLowCards)
+    const sortHigh = useCard(state => state.sortHighCards)
+    const resetCards = useCard(state => state.getCards)
+    const filterCard = useCard(state => state.getCardsByFilterCat)
 
     const handleSortRaiting = (sortBy) => {
-        const sortFilms = [...param];
-        if (sortBy === "Low") {
-            sortFilms.sort((a, b) => a.rating - b.rating);
-        }
-        else if (sortBy === "High") {
-            sortFilms.sort((a, b) => b.rating - a.rating);
-        }
-        else {
-            state(FILM_DATA);
-            return
-        }
+        if (sortBy === "Low")
+            state(sortLow);
 
-        state(sortFilms);
+        else if (sortBy === "High")
+            state(sortHigh);
+
+        else
+            state(resetCards);
+
     };
 
     const handleFilterChange = (e) => {
@@ -27,12 +27,10 @@ function Navigate({ param, state }) {
             clearTimeout(delay);
 
         setDelay(setTimeout(() => {
-            const filterFilm = FILM_DATA.filter(item =>
-                item.categories.some(cat =>
-                    cat.toLowerCase().startsWith(filterText.toLowerCase())));
+            const filterFilm = filterCard(filterText);
 
             if (filterText === '') {
-                state(FILM_DATA);
+                state(resetCards);
             } else {
                 state(filterFilm);
             }
