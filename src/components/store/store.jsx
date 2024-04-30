@@ -26,9 +26,9 @@ export const useCard = create((set, get) => ({
     getCards: () => {
         return get().cards;
     },
-    getCardsByFilterCat: (text) => {
+    getCardsByFilter: (filter,text) => {
         const filterFilm = get().cards.filter(item =>
-            item.categories.some(cat =>
+            item[filter].some(cat =>
                 cat.toLowerCase().startsWith(text.toLowerCase())));
         return filterFilm;
     }
