@@ -2,6 +2,7 @@ import React from "react";
 import Watch from '/eye_watchLater.svg'
 import Fav from '/favorite.svg'
 import { useCard } from "../store/store";
+import { Link } from "react-router-dom";
 
 function Cards({ film }) {
 
@@ -12,7 +13,7 @@ function Cards({ film }) {
 
     return (
         <div class="movie-card">
-            <h2>{film.title}</h2>
+            <Link to={"/films/" + film.id}> <h2> {film.title}</h2></Link>
             <p>Описание: {film.description}</p>
             <p>В ролях: {film.actors.join(', ')}</p>
             <p>Жанры: {film.categories.join(', ')}</p>

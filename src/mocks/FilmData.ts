@@ -8,6 +8,7 @@ export const FILM_DATA = [
         "rating": 8.1,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 2,
@@ -18,6 +19,7 @@ export const FILM_DATA = [
         "rating": 7.6,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 3,
@@ -28,6 +30,7 @@ export const FILM_DATA = [
         "rating": 8.2,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 4,
@@ -38,6 +41,7 @@ export const FILM_DATA = [
         "rating": 7.5,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 5,
@@ -48,6 +52,7 @@ export const FILM_DATA = [
         "rating": 8.4,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 6,
@@ -58,6 +63,7 @@ export const FILM_DATA = [
         "rating": 8.1,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 7,
@@ -68,6 +74,7 @@ export const FILM_DATA = [
         "rating": 7.2,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 8,
@@ -78,6 +85,7 @@ export const FILM_DATA = [
         "rating": 7.4,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 9,
@@ -88,6 +96,7 @@ export const FILM_DATA = [
         "rating": 7.3,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 10,
@@ -98,6 +107,7 @@ export const FILM_DATA = [
         "rating": 7.6,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 11,
@@ -108,6 +118,7 @@ export const FILM_DATA = [
         "rating": 7.9,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 12,
@@ -118,6 +129,7 @@ export const FILM_DATA = [
         "rating": 7.5,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 13,
@@ -128,6 +140,7 @@ export const FILM_DATA = [
         "rating": 6.8,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 14,
@@ -138,6 +151,7 @@ export const FILM_DATA = [
         "rating": 6.3,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 15,
@@ -148,6 +162,7 @@ export const FILM_DATA = [
         "rating": 6.7,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 16,
@@ -158,6 +173,7 @@ export const FILM_DATA = [
         "rating": 8.5,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 17,
@@ -168,6 +184,7 @@ export const FILM_DATA = [
         "rating": 8.1,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 18,
@@ -178,6 +195,7 @@ export const FILM_DATA = [
         "rating": 7.8,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     },
     {
         "id": 19,
@@ -188,5 +206,6 @@ export const FILM_DATA = [
         "rating": 6.4,
         "watch": false,
         "favorite": false,
+        "comments": ["хороший фильм"],
     }
 ]

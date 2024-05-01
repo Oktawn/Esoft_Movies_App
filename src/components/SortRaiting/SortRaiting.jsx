@@ -18,12 +18,18 @@ function SortRaiting({ films, state }) {
     };
 
     return (
-        <span className="navigate">
-            <span>sorting by rating: </span>
-            <button onClick={() => handleSortRaiting("Low")}>Low</button>
-            <button onClick={() => handleSortRaiting("High")}>High</button>
-            <button onClick={() => handleSortRaiting("Reset")}>Reset</button>
-        </span>
-    )
+      <span className="navigate">
+        <span>sorting by rating: </span>
+        <button className="button" onClick={() => handleSortRaiting("Low")}>
+          Low
+        </button>
+        <button className="button" onClick={() => handleSortRaiting("High")}>
+          High
+        </button>
+        <button className="button" onClick={() => handleSortRaiting("Reset")}>
+          Reset
+        </button>
+      </span>
+    );
 }
 export default SortRaiting
