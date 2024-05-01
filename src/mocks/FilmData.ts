@@ -9,6 +9,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://i.pinimg.com/564x/de/ae/54/deae544777ce1fff5d42fa9c36e81933.jpg",
+        "duration": "1 ч 36 мин",
+        "producer": "Алексей Балабанов",
+        "year": 1997
     },
     {
         "id": 2,
@@ -20,6 +24,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://i.pinimg.com/originals/c9/ad/89/c9ad892b996f93c841d30c6c4656449b.jpg",
+        "duration": "1 ч 54 мин",
+        "producer": "Тимур Бекмамбетов",
+        "year": 2004
     },
     {
         "id": 3,
@@ -31,6 +39,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://upload.wikimedia.org/wikipedia/ru/b/b3/%D0%9F%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D0%B0_%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B2.jpg",
+        "duration": "1 ч 52 мин",
+        "producer": "Павел Лунгин",
+        "year": 2006
     },
     {
         "id": 4,
@@ -42,6 +54,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://i.pinimg.com/originals/35/e8/f0/35e8f0214e9d155ce34d6717aa098d40.jpg",
+        "duration": "2 ч 10 мин",
+        "producer": "Валерий Тодоровский",
+        "year": 2008
     },
     {
         "id": 5,
@@ -53,6 +69,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://i.pinimg.com/564x/9b/b9/02/9bb902e7efcdfe86b4d0e522decaaadf.jpg",
+        "duration": "2 ч 15 мин",
+        "producer": "Георгий Данелия",
+        "year": 1986
     },
     {
         "id": 6,
@@ -64,6 +84,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://i.pinimg.com/originals/35/f1/0f/35f10f36c22a0edb3bcb1f452a24495d.jpg",
+        "duration": "2 ч 18 мин",
+        "producer": "Александр Митта",
+        "year": 1979
     },
     {
         "id": 7,
@@ -75,6 +99,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://i.pinimg.com/originals/19/cb/5b/19cb5b7190e1dd94279d9ecce6059d73.jpg",
+        "duration": "1 ч 50 мин",
+        "producer": "Андрей Малюков",
+        "year": 2008
     },
     {
         "id": 8,
@@ -86,6 +114,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://upload.wikimedia.org/wikipedia/ru/6/6c/%D0%93%D1%80%D1%83%D0%B7_200_(%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80).jpg",
+        "duration": "2 ч 00 мин",
+        "producer": "Алексей Балабанов",
+        "year": 2007
     },
     {
         "id": 9,
@@ -97,6 +129,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://viasat-small.cdnvideo.ru/viasat/production/contents/287c3cdc-adbe-422c-acb5-6be497d58f29/posters/vfxxyeun8ochppxqero1nsdljfbm",
+        "duration": "1 ч 44 мин",
+        "producer": "Алексей Балабанов",
+        "year": 2005
     },
     {
         "id": 10,
@@ -108,6 +144,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://avatars.mds.yandex.net/get-kinopoisk-image/4716873/363b60fe-585f-4a71-890e-919e71a89ae1/x1000",
+        "duration": "2 ч 20 мин",
+        "producer": "Андрей Звягинцев",
+        "year": 2014
     },
     {
         "id": 11,
@@ -119,6 +159,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://ic.pics.livejournal.com/kukina_kat/15399163/1488968/1488968_original.jpg",
+        "duration": "2 ч 35 мин",
+        "producer": "Никита Михалков",
+        "year": 1994
     },
     {
         "id": 12,
@@ -130,6 +174,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://i.pinimg.com/originals/91/89/19/91891931aab7b9b2cb9faff150c42bad.jpg",
+        "duration": "2 ч 01 мин",
+        "producer": "Алексей Балабанов",
+        "year": 2000
     },
     {
         "id": 13,
@@ -141,17 +189,25 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://ru-images.kinorium.com/movie/1080/314599.jpg?1564419345",
+        "duration": "2 ч 12 мин",
+        "producer": "Тимур Бекмамбетов",
+        "year": 2006
     },
     {
         "id": 14,
         "title": "Риорита",
-        "description": "История о вымышленной цивилизации, в которой царит культ матерей и где люди поклоняются Великому Прародителю.",
-        "actors": ["Максим Суханов", "Лиза Арзамасова", "Филипп Янковский"],
-        "categories": ["Фантастика", "Драма", "Мистика"],
+        "description": "Бывший надзиратель лагеря политзаключенных Бархатов, оказавшись на войне рядовым ефрейтором, не сумел, да и не захотел измениться в новых обстоятельствах и так и остался лагерным «вертухаем».",
+        "actors": ["Яков Шамшин", "Константин Воробьёв", "Алексей Горбунов"],
+        "categories": ["Военный", "Драма"],
         "rating": 6.3,
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://fs.kinomania.ru/file/film_poster/f/ff/fff816dc2abb61d05decd795adc07b69.jpeg",
+        "duration": "2 ч 05 мин",
+        "producer": "Пётр Тодоровский",
+        "year": 2008
     },
     {
         "id": 15,
@@ -163,6 +219,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/3771ecc5-d865-4e96-b6bf-86b89b0c9d42/1920x",
+        "duration": "1 ч 50 мин",
+        "producer": "Илья Найшуллер",
+        "year": 2016
     },
     {
         "id": 16,
@@ -174,6 +234,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/c731c252-6155-4197-a7bb-5f407410e057/1920x",
+        "duration": "2 ч 50 мин",
+        "producer": "Алексей Сидоров",
+        "year": 2002
     },
     {
         "id": 17,
@@ -185,6 +249,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/738431db-b1e0-446a-adb1-a588eab79d62/1920x",
+        "duration": "2 ч 43 мин",
+        "producer": "Андрей Тарковский",
+        "year": 1979
     },
     {
         "id": 18,
@@ -196,6 +264,10 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://upload.wikimedia.org/wikipedia/ru/9/9f/%D0%9F%D0%BE%D1%81%D1%82%D0%B5%D1%80_%D0%BA_%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%83_%C2%AB%D0%98%D0%B4%D0%B8%D0%BE%D1%82_%28%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%29%C2%BB.jpg",
+        "duration": "2 ч 50 мин",
+        "producer": "Владимир Бортко",
+        "year": 2003
     },
     {
         "id": 19,
@@ -207,5 +279,9 @@ export const FILM_DATA = [
         "watch": false,
         "favorite": false,
         "comments": ["хороший фильм"],
+        "image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/492da519-9bd0-4d6d-8dde-b925d8fca180/1920x",
+        "duration": "1 ч 54 мин",
+        "producer": "Фёдор Бондарчук",
+        "year": 2008
     }
-]
+];

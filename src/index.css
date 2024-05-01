@@ -14,19 +14,35 @@ input {
   border-radius: 10px;
   border: 1px solid #ccc;
 }
-.button{
+
+.button {
   border-radius: 8px;
   border: 1px solid #ccc;
   width: 4em;
   height: 1.8em;
 }
 
+.img-film {
+  height: 333px;
+}
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+}
+
+.container-film {
+  display: flex;
+  gap: 50px;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.film-show{
+  margin-top: 10px;
+  width: 400px;
 }
 
 .movie-card {
@@ -45,7 +61,7 @@ input {
   margin-bottom: 5px;
 }
 
-.movie-film h2{
+.movie-film h2 {
   color: #333;
 }
 

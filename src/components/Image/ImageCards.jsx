@@ -1,13 +1,5 @@
-function ImageCards({ src, alt, active, click, id }) {
-
-    return (
-        <img
-            src={src}
-            className={active ? "logo_active" : "logo"}
-            alt={alt}
-            onClick={() => click(id)}
-        ></img>
-    );
+function ImageCards({ src }) {
+  return <img className="img-film" src={src}></img>;
 }
 
-export default ImageCards
+export default ImageCards;

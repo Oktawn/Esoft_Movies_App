@@ -40,17 +40,14 @@ export const useCard = create((set, get) => ({
       .sort((a, b) => b.rating - a.rating);
   },
   getCard: (id) => {
-    const f = get().cards[id];
-    return f;
+    return get().cards[id];
   },
   getCards: () => {
     return get().cards;
   },
   getCardsByFilter: (filter, text) => {
     const filterFilm = get().cards.filter((item) =>
-      item[filter].some((cat) =>
-        cat.toLowerCase().startsWith(text.toLowerCase())
-      )
+      item[filter].some((cat) => cat.toLowerCase().includes(text.toLowerCase()))
     );
     return filterFilm;
   },
