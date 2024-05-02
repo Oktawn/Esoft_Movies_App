@@ -1,7 +1,14 @@
+import Watch from "/eye_watchLater.svg";
+import Fav from "/favorite.svg";
 import ImageCards from "../Image/ImageCards";
-import Input from "../Input/Input";
+import InputAddComment from "../Input/InputAddComment";
+import { useCard } from "../store/store";
 
-function CardFilms({ film, state }) {
+function CardFilms({ film }) {
+  const activeWatch = useCard((state) => state.getWatch);
+  const swapWatch = useCard((state) => state.toggleWatch);
+  const activeFavorite = useCard((state) => state.getFavorite);
+  const swapFavorite = useCard((state) => state.toggleFavorite);
   return (
     <>
       <div className="container-film">
@@ -15,6 +22,20 @@ function CardFilms({ film, state }) {
           <p>В главной роли: {film.actors.join(", ")}</p>
           <p>Длительность:{film.duration}</p>
           <p>Год показа: {film.year}</p>
+          <p>
+            <img
+              src={Watch}
+              alt="Watch later"
+              className={activeWatch(film.id) ? "logo_active" : "logo"}
+              onClick={() => swapWatch(film.id)}
+            />
+            <img
+              src={Fav}
+              alt="Favorite film"
+              className={activeFavorite(film.id) ? "logo_active" : "logo"}
+              onClick={() => swapFavorite(film.id)}
+            />
+          </p>
         </div>
       </div>
       <div>
@@ -22,7 +43,7 @@ function CardFilms({ film, state }) {
         <p>{film.description}</p>
       </div>
       <p>добавить комментарий</p>
-      <Input state={state} />
+      <InputAddComment id={film.id} comments={film.comments} />
       <p>Комментарии</p>
       <ul>
         {film.comments.map((f) => (

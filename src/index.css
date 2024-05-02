@@ -1,5 +1,10 @@
 ul {
   list-style-type: none;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -18,8 +23,14 @@ input {
 .button {
   border-radius: 8px;
   border: 1px solid #ccc;
-  width: 4em;
-  height: 1.8em;
+  width: auto;
+  height: 2em;
+}
+
+.navigate-comment {
+  display: flex;
+  column-gap: 10px;
+  align-items: baseline;
 }
 
 .img-film {
@@ -40,7 +51,7 @@ input {
   align-items: center;
 }
 
-.film-show{
+.film-show {
   margin-top: 10px;
   width: 400px;
 }

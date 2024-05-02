@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { useCard } from "../store/store";
 import Input from "../Input/Input";
 import SortRaiting from "../SortRaiting/SortRaiting";
 
