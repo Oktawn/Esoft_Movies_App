@@ -20,6 +20,21 @@ input {
   border: 1px solid #ccc;
 }
 
+footer {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.comment-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-text{
+  margin-left: 4em;
+}
+
 .button {
   border-radius: 8px;
   border: 1px solid #ccc;

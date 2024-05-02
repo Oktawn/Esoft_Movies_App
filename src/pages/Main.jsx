@@ -6,7 +6,7 @@ import { useState } from "react";
 function Main() {
   const [films, setFilms] = useState(useCard((state) => state.cards));
   return (
-    <div>
+    <div className="container">
       <Navigate films={films} state={setFilms} />
       <CardList props={films} />
     </div>

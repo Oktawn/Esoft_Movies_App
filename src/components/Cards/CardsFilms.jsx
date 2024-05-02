@@ -1,14 +1,14 @@
-import Watch from "/eye_watchLater.svg";
-import Fav from "/favorite.svg";
 import ImageCards from "../Image/ImageCards";
 import InputAddComment from "../Input/InputAddComment";
+import Comment from "../Comment/Comment";
+import ActiveImage from "../Image/ActiveImage";
 import { useCard } from "../store/store";
+import CardList from "../CardList/CardList";
 
 function CardFilms({ film }) {
-  const activeWatch = useCard((state) => state.getWatch);
-  const swapWatch = useCard((state) => state.toggleWatch);
-  const activeFavorite = useCard((state) => state.getFavorite);
-  const swapFavorite = useCard((state) => state.toggleFavorite);
+  const similarFilm = useCard((state) =>
+    state.getSimilarCards(film.id, film.categories[0])
+  );
   return (
     <>
       <div className="container-film">
@@ -22,32 +22,21 @@ function CardFilms({ film }) {
           <p>В главной роли: {film.actors.join(", ")}</p>
           <p>Длительность:{film.duration}</p>
           <p>Год показа: {film.year}</p>
-          <p>
-            <img
-              src={Watch}
-              alt="Watch later"
-              className={activeWatch(film.id) ? "logo_active" : "logo"}
-              onClick={() => swapWatch(film.id)}
-            />
-            <img
-              src={Fav}
-              alt="Favorite film"
-              className={activeFavorite(film.id) ? "logo_active" : "logo"}
-              onClick={() => swapFavorite(film.id)}
-            />
-          </p>
+          <ActiveImage id={film.id} />
         </div>
       </div>
       <div>
         <h2>Описание</h2>
         <p>{film.description}</p>
       </div>
-      <p>добавить комментарий</p>
+      <h2>Похожие по жанру:</h2>
+      <CardList props={similarFilm} />
+      <h2>Добавить комментарий</h2>
       <InputAddComment id={film.id} comments={film.comments} />
-      <p>Комментарии</p>
+      <h2>Комментарии:</h2>
       <ul>
         {film.comments.map((f) => (
-          <li>{f}</li>
+          <li>{<Comment text={f} />}</li>
         ))}
       </ul>
     </>

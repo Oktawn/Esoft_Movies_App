@@ -62,10 +62,22 @@ export const useCard = create(
         );
         return filterFilm;
       },
+      getSimilarCards: (id, text) => {
+        const filmSimilar = get()
+          .cards.filter(
+            (item) =>
+              item.id !== id &&
+              item.categories.some((cat) =>
+                cat.toLowerCase().includes(text.toLowerCase())
+              )
+          )
+          .slice(0, 2);
+        return filmSimilar;
+      },
     }),
     {
-      name: "persistedStore", // укажите имя вашего хранилища
-      getStorage: () => localStorage, // укажите, где хранить данные
+      name: "persistedStore",
+      getStorage: () => localStorage,
     }
   )
 );

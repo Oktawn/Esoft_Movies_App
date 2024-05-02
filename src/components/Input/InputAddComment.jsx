@@ -10,6 +10,7 @@ function InputAddComment({ id, comments }) {
   };
 
   const handleAddComm = () => {
+    if (inputComment === "") return;
     comments.push(inputComment);
     add(id, comments);
 
