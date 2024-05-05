@@ -30,7 +30,7 @@ export const useCard = create(
         return get().cards.find((card) => card.id === id)?.watch;
       },
       getCountWatch: () => {
-        return get().cards.filter((card) => card.watch)?.length;
+        return get().cards.filter((card) => card.watch).length;
       },
       getCountFavorite: () => {
         return get().cards.filter((card) => card.favorite).length;
