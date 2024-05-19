@@ -3,7 +3,7 @@ import CardList from "../components/CardList/CardList";
 import { useCard } from "../components/store/store";
 import { useState } from "react";
 import Input from "../components/Input/Input";
-import SortRaiting from "../components/SortRaiting/SortRaiting";
+import SortRating from "../components/SortRating/SortRating";
 
 function Search() {
   const [films, setFilms] = useState(useCard((state) => state.cards));
@@ -17,7 +17,7 @@ function Search() {
           data={["actors", "categories"]}
         />
         <Input filter={filter} state={setFilms} />
-        <SortRaiting films={films} state={setFilms} />
+        <SortRating films={films} state={setFilms} />
         <CardList props={films} />
       </div>
     </>

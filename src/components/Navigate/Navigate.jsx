@@ -1,12 +1,12 @@
 import Input from "../Input/Input";
-import SortRaiting from "../SortRaiting/SortRaiting";
+import SortRating from "../SortRating/SortRating";
 
 function Navigate({ films, state }) {
     return (
         <div className="navigate">
             <span>filter by categories:</span>
             <Input state={state} filter={"categories"} />
-            <SortRaiting films={films} state={state} />
+            <SortRating films={films} state={state} />
         </div>
     );
 }
